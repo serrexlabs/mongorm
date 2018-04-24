@@ -1,0 +1,32 @@
+{
+    "name": "serrexlabs/mongorm",
+    "description": "Laravel based simple mongo db orm",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sanath Samarasinghe",
+            "email": "sanath@serrexlabs.com"
+        }
+    ],
+    "require": {
+        "illuminate/console": "5.*",
+        "illuminate/container": "5.*",
+        "illuminate/contracts": "5.*",
+        "illuminate/http": "5.*",
+        "illuminate/support": "5.*",
+        "mongodb/mongodb": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Serrexlabs\\Mongorm\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Serrexlabs\\Mongorm\\MongormProvider"
+            ]
+        }
+    }
+}

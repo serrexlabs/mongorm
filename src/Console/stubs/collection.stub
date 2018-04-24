@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use Serrexlabs\Mongorm\Collection;
+
+class DummyClass extends Collection
+{
+    //
+}

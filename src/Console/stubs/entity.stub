@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use Serrexlabs\Mongorm\Entity;
+
+class DummyClass extends Entity
+{
+    //
+}
