@@ -37,6 +37,6 @@ class Mongo
      */
     public static function getDatabase()
     {
-        return config('mongorm.database');
+        return config('services.mongo.database');
     }
 }

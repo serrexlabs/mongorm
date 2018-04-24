@@ -2,6 +2,6 @@
 ```
  'mongo' => [
          'host' => env('MONGO_HOST', "127.0.0.1"),
-         'database' => env('MONGO_DB', 'cravex'),
+         'database' => env('MONGO_DB', 'db_name'),
 ],
 ```

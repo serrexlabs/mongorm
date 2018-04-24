@@ -28,5 +28,6 @@
                 "Serrexlabs\\Mongorm\\MongormProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
