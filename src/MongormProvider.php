@@ -14,6 +14,10 @@ class MongormProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishes([
+            __DIR__.'/config/mongorm.php' => config_path('mongorm.php'),
+        ]);
+
         if ($this->app->runningInConsole()) {
             $this->commands([
                 MakeCollection::class,
