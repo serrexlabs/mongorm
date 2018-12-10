@@ -26,7 +26,7 @@ class Mongo
      */
     private static function getInstance()
     {
-        $host = config('services.mongo.host');
+        $host = config('mongorm.mongo.host');
         $uri = 'mongodb://'. $host . '/';
         self::$mongoClient = new Client($uri);
         return self::$mongoClient;
@@ -37,6 +37,6 @@ class Mongo
      */
     public static function getDatabase()
     {
-        return config('services.mongo.database');
+        return config('mongorm.mongo.database');
     }
 }

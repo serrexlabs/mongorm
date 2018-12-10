@@ -158,7 +158,7 @@ abstract class Collection extends MongoCollection
     protected function entityName()
     {
         $entityName = $this->getCollectionNameWithoutPostfix();
-        $entityName = config('services.mongo.entity_namespace') . $entityName;
+        $entityName = config('mongorm.mongo.entity_namespace') . $entityName;
         return $entityName;
     }
 
