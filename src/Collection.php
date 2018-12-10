@@ -141,9 +141,14 @@ abstract class Collection extends MongoCollection
         if ($property === "_id") {
             $property = "id";
         }
+
         $property = str_replace('_', '', lcfirst(ucwords($property, '_')));
+
         $setter = "set" . ucfirst($property);
-        $entity->$setter($value);
+
+        if (method_exists($entity, $setter)) {
+            $entity->$setter($value);
+        }
     }
 
     private function validateDependency()
